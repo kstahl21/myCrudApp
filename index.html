@@ -2,9 +2,53 @@
 <html>
 <head>
 	<title>My First Crud App</title>
-	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js""></script>
+<script src="app.js"></script>
+<link rel="stylesheet" type="text/css" href="design.css">
+
 </head>
 <body>
-	<input class ="textField" type="text" name="firstInputField">
+	<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet">
+
+	<h1>Code Snippet-er</h1>
+	<img src="https://thumb.ibb.co/hWdwAy/141008_154478600_vector_modern_scissors_with_cut_lines_icon.jpg" alt="141008_154478600_vector_modern_scissors_with_cut_lines_icon" border="0">
+
+	
+	<h2><i>Browse over thousands snippets of code in our database or add your own to our growing library.</i></h2>
+	<div class="container">
+
+	<div class="firstContainer">
+	<h4>Want to share your snippet? Follow the steps below.</h4>
+ 	<input class="snippetName" type="text" placeholder="Your Snippet Name">
+	<div><textarea class="snippetCode" rows="15" cols="50"  type="text"> </textarea> </div>
+	<div><button class ="submitSnippet">Click here to submit your snippet and save it to our library!</button></div>
+	</div>
+
+
+	<div class="firstContainer">
+	<h4>Don't feel like coding? Search our library below.</h4>
+	<input class="snippetSearchText" type="text" placeholder="Snippet Name">
+	<div><button class ="searchButton">Submit Search Request</button></div>
+	<div><textarea class="snippetCodeResult" rows="15" cols="50" type="text"></textarea></div>
+	</div>
+	
+
+	<h4>Not sure what to search for? Click the button below to see all of our snippets. They will appear in the text box above.</h4>
+	<div><button class ="listAllButton">List all snippets.</button></div>
+
+
+
+
+	<h4>Enter the snippet name below to delete it from the library</h4>
+	<input class="deleteName" type="text" placeholder="Snippet Name">
+	<div><button class ="deleteButton">Delete snippet!</button></div>
+
+
+	</div>
 </body>
 </html>
+
+
+
+

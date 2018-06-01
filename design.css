@@ -1,0 +1,70 @@
+body {
+	
+	background-color: white;
+	text-align: center;
+
+}
+
+h1 {
+font-family: 'Raleway Dots';
+font-size: 75px;
+color: black;
+border: 5px solid black;
+width: 55%;
+margin: auto;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 15px;
+
+}
+
+.snippetName::placeholder {
+	color: #4682B4;
+	opacity: 1;
+}
+.snippetName {
+	text-align: center;
+}
+
+.snippetSearchText::placeholder {
+	color: #4682B4;
+	opacity: 1;
+}
+.submitSnippet{
+	background-color: 	#4682B4;
+	color: white;
+}
+
+.searchButton{
+	background-color: 	#4682B4;
+	color: white;
+}
+
+.snippetSearchText {
+	text-align: center;
+}
+
+.listAllButton{
+	background-color: 	#4682B4;
+	color: white;
+}
+
+.deleteName::placeholder{
+	text-align: center;
+	color: 	#4682B4;
+	opacity: 1;
+}
+
+.deleteButton{
+	background-color: #4682B4;
+	color: white;
+}
+
+.container {
+/*	display: flex;
+*/}
