@@ -14,27 +14,16 @@ $(document).ready(function(){
 
 		let searchRequest = $('.snippetSearchText').val();
 
-		var result = false;
-
-		for (i = 0; i < localStorage.length; i++){
-			var snippetTitle = localStorage.key(i);
-			var snippetCode = localStorage.getItem(localStorage.key(i))
-				if (snippetTitle === searchRequest){
-					result = true;
-					$('.snippetCodeResult').text(snippetCode);
-				}
-		}
-
-			if (result === false) {
+			if (localStorage[searchRequest]) {
+				$('.snippetCodeResult').text(localStorage[searchRequest]);
+			} else {
 				$('.snippetCodeResult').text('Sorry this snippet you searched for does not exist. Maybe you should try writing it for us');
 			}
-
-		
 	});
 
 
 	$('.listAllButton').on('click',function(){
-		var listOfAllSnippets = ""
+		var listOfAllSnippets = "";
 		for (var i = 0; i < localStorage.length; i++){
 			var snippetTitle = localStorage.key(i);
     		var snippetCode = localStorage.getItem(localStorage.key(i));
@@ -46,7 +35,6 @@ $(document).ready(function(){
 	});
 
 	$('.deleteButton').on('click',function(){
-
 		var snippetToBeRemoved = $('.deleteName').val();
 		localStorage.removeItem(snippetToBeRemoved);
 
