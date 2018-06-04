@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My First Crud App</title>
+  <title>My First Crud App</title>
 <script src="https://code.jquery.com/jquery-3.3.1.js""></script>
 <script src="app.js"></script>
 <link rel="stylesheet" type="text/css" href="design.css">
@@ -33,7 +33,10 @@
         <a class="nav-link" href="library.html"><i class="fas fa-book-open"></i> View Library</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-trash"></i> Delete a Snippet</a>
+        <a class="nav-link" href="search.html"><i class="fas fa-search"></i> Search Library</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="delete.html"><i class="fas fa-trash"></i> Delete a Snippet</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
@@ -44,47 +47,13 @@
 
 
 
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="firstContainer">
-	<h4>Want to share your snippet? Follow the steps below.</h4>
- 	<input class="snippetName" type="text" placeholder="Your Snippet Name">
-	<div><textarea class="snippetCode" rows="10" cols="50"  type="text"> </textarea> </div>
-	<div><button class ="submitSnippet">Click here to submit your snippet and save it to our library!</button></div>
-	</div>
-    </div>
-    <div class="col">
-    	<h4>Don't feel like coding? Search our library below.</h4>
-	<input class="snippetSearchText" type="text" placeholder="Snippet Name">
-	<button class ="searchButton">Submit Search Request</button>
-	<div><textarea class="snippetCodeResult" rows="10" cols="50" type="text"></textarea></div>
-  </div>   
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="firstContainer">
-	<h4>Not sure what to search for? Click the button below to see all of our snippets. They will appear in the text box above.</h4>
-	<div><button class ="listAllButton">List all snippets.</button></div>
-	</div>
-    </div>
-  </div>
-</div>
-
-
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <div class="firstContainer">
-	<h4>Enter the snippet name below to delete it from the library</h4>
-	<input class="deleteName" type="text" placeholder="Snippet Name">
-	<div><button class ="deleteButton">Delete snippet!</button></div>
-	</div>
-    </div>
-  </div>
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to Snip-it.</h1>
+  <p class="lead">Snip-it is a project I have worked on at the end of the Hack Reactor Extension Program. This project interacts with your browser's local storage to add anything you like (functions, names, funny stories - whatever you want!).</p>
+  <hr class="my-4">
+  <p>It uses JQuery, Javascript, and CSS (bootstrap for the win!) while applying principles that I have learned throughout my time as a student.</p>
+  <p>This is best used when you have your local memory opened while accessing this project.</p>
+  <a class="btn btn-primary btn-sm" href="https://github.com/kstahl21/myCrudApp" role="button">Check out my github to fork this repo and play around with it!</a>
 </div>
 
 

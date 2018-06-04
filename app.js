@@ -1,7 +1,11 @@
 $(document).ready(function(){
+	let namesOfSnippets = [];
 
 	$('.submitSnippet').on('click', function(){
 		let snippetName = $('.snippetName').val();
+		namesOfSnippets.push(snippetName);
+		
+
 		let snippetCode = $('.snippetCode').val();
 
 		localStorage.setItem(snippetName, snippetCode);
@@ -23,19 +27,19 @@ $(document).ready(function(){
 
 
 	$('.listAllButton').on('click',function(){
-		var listOfAllSnippets = "";
-		for (var i = 0; i < localStorage.length; i++){
-			var snippetTitle = localStorage.key(i);
-    		var snippetCode = localStorage.getItem(localStorage.key(i));
+		let listOfAllSnippets = "";
+		for (let i = 0; i < localStorage.length; i++){
+			let snippetTitle = localStorage.key(i);
+    		let snippetCode = localStorage.getItem(localStorage.key(i));
     		listOfAllSnippets+= (`This snippet is called ${snippetTitle}\n ${snippetCode}\n \n`)
 		}
 
-		$('.snippetCodeResult').text(listOfAllSnippets);
+		$('.listAllCode').text(listOfAllSnippets);
 
 	});
 
 	$('.deleteButton').on('click',function(){
-		var snippetToBeRemoved = $('.deleteName').val();
+		let snippetToBeRemoved = $('.deleteName').val();
 		localStorage.removeItem(snippetToBeRemoved);
 
 	});

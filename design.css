@@ -3,30 +3,26 @@ body {
 	background-color: white;
 	text-align: center;
 
-}
-
-h1 {
-font-family: 'Raleway Dots';
-font-size: 75px;
-color: black;
-border: 5px solid black;
-width: 55%;
-margin: auto;
-}
-
-h2 {
-	font-size: 20px;
-}
-
-h4 {
-	font-size: 15px;
 
 }
+
+.jumbotron {
+	text-align: center;
+
+}
+
+.form-inline {
+	padding-top: 5px;
+}
+
 
 .snippetName::placeholder {
 	color: #4682B4;
 	opacity: 1;
 }
+
+
+
 .snippetName {
 	text-align: center;
 }
@@ -60,11 +56,8 @@ h4 {
 	opacity: 1;
 }
 
-.deleteButton{
+.deleteButton {
 	background-color: #4682B4;
 	color: white;
 }
 
-.container {
-/*	display: flex;
-*/}
