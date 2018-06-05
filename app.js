@@ -1,23 +1,19 @@
-$(document).ready(function(){
+$(document).ready(() => {
+
 	let namesOfSnippets = [];
 
-	$('.submitSnippet').on('click', function(){
+	$('.submitSnippet').on('click', () => {
 		let snippetName = $('.snippetName').val();
 		namesOfSnippets.push(snippetName);
-		
-
 		let snippetCode = $('.snippetCode').val();
-
 		localStorage.setItem(snippetName, snippetCode);
 		$('.snippetName').val('')
 		$('.snippetCode').val('')
 	});
 
 
-	$('.searchButton').on('click', function(){
-
+	$('.searchButton').on('click', () => {
 		let searchRequest = $('.snippetSearchText').val();
-
 			if (localStorage[searchRequest]) {
 				$('.snippetCodeResult').text(localStorage[searchRequest]);
 			} else {
@@ -26,7 +22,7 @@ $(document).ready(function(){
 	});
 
 
-	$('.listAllButton').on('click',function(){
+	$('.listAllButton').on('click',() => {
 		let listOfAllSnippets = "";
 		for (let i = 0; i < localStorage.length; i++){
 			let snippetTitle = localStorage.key(i);
@@ -38,7 +34,7 @@ $(document).ready(function(){
 
 	});
 
-	$('.deleteButton').on('click',function(){
+	$('.deleteButton').on('click',() => {
 		let snippetToBeRemoved = $('.deleteName').val();
 		localStorage.removeItem(snippetToBeRemoved);
 
